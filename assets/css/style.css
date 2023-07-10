@@ -2,29 +2,15 @@
 
 @font-face {
   font-family: 'Poppins';
-  src: url('/assets/fonts/Poppins/Poppins-Black.ttf') format('ttf'),
-       url('/assets/fonts/Poppins/Poppins-BlackItalic.ttf') format('ttf'),
-       url('/assets/fonts/Poppins/Poppins-Bold.ttf') format('ttf'),
-       url('/assets/fonts/Poppins/Poppins-BoldItalic.ttf') format('ttf'),
-       url('/assets/fonts/Poppins/Poppins-ExtraBold.ttf') format('ttf'),
-       url('/assets/fonts/Poppins/Poppins-ExtraBoldItalic.ttf') format('ttf'),
-       url('/assets/fonts/Poppins/Poppins-ExtraLight.ttf') format('ttf'),
-       url('/assets/fonts/Poppins/Poppins-Italic.ttf') format('ttf'),
-       url('/assets/fonts/Poppins/Poppins-Light.ttf') format('ttf'),
-       url('/assets/fonts/Poppins/Poppins-LightItalic.ttf') format('ttf'),
-       url('/assets/fonts/Poppins/Poppins-Medium.ttf') format('ttf'),
-       url('/assets/fonts/Poppins/Poppins-MediumItalic.ttf') format('ttf'),
-       url('/assets/fonts/Poppins/Poppins-Regular.ttf') format('ttf'),
-       url('/assets/fonts/Poppins/Poppins-SemiBold.ttf') format('ttf'),
-       url('/assets/fonts/Poppins/Poppins-SemiBoldItalic.ttf') format('ttf'),
-       url('/assets/fonts/Poppins/Poppins-Thin.ttf') format('ttf'),
-       url('/assets/fonts/Poppins/Poppins-ThinItalic.ttf') format('ttf');
+  src: url('/assets/fonts/Poppins/Poppins-Regular.ttf') format('ttf');
+  font-display: swap;
 }
 
 @font-face {
   font-family: 'Culonite';
-  src: url('/assets/fonts/Culonite/Culonite-Light.otf') format('otf');
+  src: url('/assets/fonts/Culonite/Culonite-Light.otf') format('opentype');
   font-weight: Light;
+  font-display: swap;
 }
 
 
@@ -99,7 +85,7 @@ h6 {
   bottom: 0;
   z-index: 9999;
   overflow: hidden;
-  background: #fff;
+  background: #28353D;
 }
 
 #preloader:before {
@@ -107,13 +93,13 @@ h6 {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #2487ce;
+  border: 6px solid #FFBA08;
   border-top-color: #fff;
   border-bottom-color: #fff;
   border-radius: 50%;
   width: 60px;
   height: 60px;
-  /* animation: animate-preloader 1s linear infinite; */
+  animation: animate-preloader 1s linear infinite;
 }
 
 @keyframes animate-preloader {
@@ -419,7 +405,7 @@ h6 {
   position: relative;
   background: url("../img/bg.png") top center;
   background-size: cover;
-  position: relative;
+  background-position: center;
 }
 
 #hero:before {
@@ -439,7 +425,7 @@ h6 {
 #hero h1 {
   margin: 0;
   font-size: 56px;
-  font-weight: 700;
+  /* font-weight: 700; */
   line-height: 72px;
   color: #28353D;
 }
